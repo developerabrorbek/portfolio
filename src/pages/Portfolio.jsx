@@ -34,11 +34,11 @@ const Portfolio = () => {
           works <i className="fa-solid fa-right-long text-[24px]"></i>
         </span>
       </h1>
-      <ul className="grid grid-cols-3 gap-8">
+      <ul className="grid items-center justify-center md:grid-cols-2 xl:grid-cols-3 gap-8">
         <li
           onMouseOver={() => handleHover("card-1")}
           onMouseLeave={() => handleAfterHover("card-1")}
-          className="card card-1 p-1  rounded-sm overflow-hidden bg-[#27374D] transition-all"
+          className="card card-1 p-1  rounded-sm overflow-hidden bg-[#27374D] transition-all  max-w-[420px]"
         >
           <div className="card-image  overflow-hidden">
             <img
@@ -81,7 +81,7 @@ const Portfolio = () => {
         <li
           onMouseOver={() => handleHover("card-2")}
           onMouseLeave={() => handleAfterHover("card-2")}
-          className="card card-2 p-1  rounded-sm overflow-hidden bg-[#27374D] transition-all"
+          className="card card-2 p-1  rounded-sm overflow-hidden bg-[#27374D] transition-all max-w-[420px]"
         >
           <div className="card-image  overflow-hidden">
             <img
@@ -124,7 +124,7 @@ const Portfolio = () => {
         <li
           onMouseOver={() => handleHover("card-3")}
           onMouseLeave={() => handleAfterHover("card-3")}
-          className="card card-3 p-1  rounded-sm overflow-hidden bg-[#27374D] transition-all"
+          className="card card-3 p-1  rounded-sm overflow-hidden bg-[#27374D] transition-all  max-w-[420px]"
         >
           <div className="card-image  overflow-hidden">
             <img
