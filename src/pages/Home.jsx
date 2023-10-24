@@ -15,7 +15,7 @@ const Home = () => {
         </h1>
         <p className="text-white mb-8 text-lg font-middle">
           I am a professional web developer with over 1.5 years experience.
-          <br /> I can create both FrontEnd and BackEnd parts a website
+          <br /> I can create both FrontEnd and BackEnd parts of a website.
         </p>
         <Link
           to="/about"

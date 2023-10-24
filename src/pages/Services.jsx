@@ -2,7 +2,7 @@ const Services = () => {
   return (
     <div className="services-page min-h-screen bg-[#0F0F0F] p-12">
       <h1 className="text-white text-[38px] border-b font-semibold inline-block border-[#dc6b24] mb-20">
-        My <span>services</span>
+        My <span>services <i className="fa-solid fa-right-long text-[24px]"></i></span>
       </h1>
 
       <ul className="cards grid grid-cols-3 gap-4">
@@ -11,7 +11,7 @@ const Services = () => {
             <i className="fa-solid fa-display"></i>
           </div>
           <div className="card-body flex flex-col items-center">
-            <h3 className=" font-bold text-[22px] mb-3">Web sites</h3>
+            <h3 className=" font-bold text-[22px] mb-3">FrontEnd</h3>
             <p className=" text-center px-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
               illo?
@@ -23,7 +23,7 @@ const Services = () => {
             <i className="fa-solid fa-display"></i>
           </div>
           <div className="card-body flex flex-col items-center">
-            <h3 className=" font-bold text-[22px] mb-3">Web sites</h3>
+            <h3 className=" font-bold text-[22px] mb-3">BackEnd</h3>
             <p className=" text-center px-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
               illo?
@@ -35,7 +35,7 @@ const Services = () => {
             <i className="fa-solid fa-display"></i>
           </div>
           <div className="card-body flex flex-col items-center">
-            <h3 className=" font-bold text-[22px] mb-3">Web sites</h3>
+            <h3 className=" font-bold text-[22px] mb-3">FullStack</h3>
             <p className=" text-center px-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
               illo?
