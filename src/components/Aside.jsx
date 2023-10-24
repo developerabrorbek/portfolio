@@ -1,15 +1,104 @@
+import { useRef } from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../../public/logo.svg";
 const Aside = () => {
+  const asideEl = useRef(null);
+  const overlayEl = useRef(null);
+  const handleBurger = () => {
+    asideEl.current.classList.remove("slide-left");
+    asideEl.current.classList.add("slide-right");
+    overlayEl.current.classList.remove("hidden");
+  };
+
+  const handleOverlay = () => {
+    asideEl.current.classList.remove("slide-right");
+    overlayEl.current.classList.add("hidden");
+    asideEl.current.classList.add("slide-left");
+  };
+
   return (
     <>
-      <div className="navbar-overlay hidden fixed  w-screen h-screen z-20"></div>
-      <div className="burger lg:hidden bg-[#0F0F0F] pt-2 pl-4 text-white text-[26px]">
-        <i className="fa-solid fa-bars text-inherit"></i>
+      <div className="burger-elements">
+        <div
+          onClick={handleOverlay}
+          ref={overlayEl}
+          className="navbar-overlay hidden fixed top-0 left-0 w-screen bg-[#ccc7] min-h-screen z-20"
+        ></div>
+        <div
+          onClick={handleBurger}
+          className="burger lg:hidden bg-[#0F0F0F] px-8 pt-4 text-white text-[26px]"
+        >
+          <i className="fa-solid fa-bars text-inherit"></i>
+        </div>
+        <aside
+          ref={asideEl}
+          className="site-aside fixed  w-[300px] min-h-screen  z-30 -left-[300px] top-0"
+        >
+          <div className="aside-body flex relative flex-col items-center  h-screen pt-20 bg-[#232D3F]">
+            <i
+              onClick={handleOverlay}
+              className="fa-solid fa-xmark cursor-pointer absolute text-[32px] text-white top-2 right-2"
+            ></i>
+            <div className="logo text-4xl font-semibold tracking-wider  hover:text-[#dc6b24] transition-colors text-white">
+              <a href="/" className="text-inherit">
+                <img src={Logo} alt="Abrordev" className="" />
+              </a>
+            </div>
+
+            <nav className="navbar">
+              <ul className="flex flex-col gap-y-4">
+                <li className="border-b px-8 py-3">
+                  <NavLink
+                    to="/"
+                    className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
+                  >
+                    <i className="fa-solid fa-house text-inherit"></i>Home
+                  </NavLink>
+                </li>
+                <li className="border-b px-8 py-3">
+                  <NavLink
+                    to="/about"
+                    className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
+                  >
+                    <i className="fa-solid fa-user text-inherit"></i>About
+                  </NavLink>
+                </li>
+                <li className="border-b px-8 py-3">
+                  <NavLink
+                    to="/services"
+                    className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
+                  >
+                    <i className="fa-solid fa-list text-inherit"></i>Services
+                  </NavLink>
+                </li>
+                <li className="border-b px-8 py-3">
+                  <NavLink
+                    to="/portfolio"
+                    className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
+                  >
+                    <i className="fa-solid fa-briefcase text-inherit"></i>
+                    Portfolio
+                  </NavLink>
+                </li>
+                <li className="border-b px-8 py-3 transition-all">
+                  <NavLink
+                    to="/contact"
+                    className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
+                  >
+                    <i className="fa-solid fa-message text-inherit"></i>Contact
+                  </NavLink>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
       </div>
-      <aside className="site-aside fixed  z-10 left-0 top-0 ">
-        <div className="aside-body hidden  lg:flex relative z-30 flex-col items-center min-w-[300px] h-screen pt-28 bg-[#232D3F]">
-          <div className="logo text-3xl font-semibold tracking-wider mb-28 text-white">
-            AbrorDev
+      <aside className="site-aside hidden lg:block w-[300px] min-h-screen fixed  z-30 left-0 top-0 ">
+        <div className="aside-body flex flex-col items-center  h-screen pt-16 bg-[#232D3F]">
+          <div className="logo text-4xl font-semibold tracking-wider  hover:text-[#dc6b24] transition-colors text-white">
+            <a href="/" className="text-inherit">
+              <img src={Logo} alt="Abrordev" className="" />
+            </a>
           </div>
 
           <nav className="navbar">
@@ -17,7 +106,7 @@ const Aside = () => {
               <li className="border-b px-8 py-3">
                 <NavLink
                   to="/"
-                  className="flex gap-x-4 items-center font-medium text-[20px] text-white"
+                  className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
                 >
                   <i className="fa-solid fa-house text-inherit"></i>Home
                 </NavLink>
@@ -25,7 +114,7 @@ const Aside = () => {
               <li className="border-b px-8 py-3">
                 <NavLink
                   to="/about"
-                  className="flex gap-x-4 items-center font-medium text-[20px] text-white"
+                  className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
                 >
                   <i className="fa-solid fa-user text-inherit"></i>About
                 </NavLink>
@@ -33,7 +122,7 @@ const Aside = () => {
               <li className="border-b px-8 py-3">
                 <NavLink
                   to="/services"
-                  className="flex gap-x-4 items-center font-medium text-[20px] text-white"
+                  className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
                 >
                   <i className="fa-solid fa-list text-inherit"></i>Services
                 </NavLink>
@@ -41,7 +130,7 @@ const Aside = () => {
               <li className="border-b px-8 py-3">
                 <NavLink
                   to="/portfolio"
-                  className="flex gap-x-4 items-center font-medium text-[20px] text-white"
+                  className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
                 >
                   <i className="fa-solid fa-briefcase text-inherit"></i>
                   Portfolio
@@ -50,7 +139,7 @@ const Aside = () => {
               <li className="border-b px-8 py-3 transition-all">
                 <NavLink
                   to="/contact"
-                  className="flex gap-x-4 items-center font-medium text-[20px] text-white"
+                  className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
                 >
                   <i className="fa-solid fa-message text-inherit"></i>Contact
                 </NavLink>

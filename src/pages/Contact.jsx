@@ -12,7 +12,7 @@ const Contact = () => {
 
       <div className="contact-body">
         <div className="socials flex justify-center mb-12">
-          <ul className="grid xl:grid-cols-2 w-full gap-8 px-4 lg:px-16">
+          <ul className="grid xl:grid-cols-2 justify-center w-full gap-8 px-4 lg:px-16">
             <li className="flex gap-5 items-center bg-[#2C3333] py-2 px-4 rounded-md">
               <div className="location flex items-center justify-center rounded-full text-[24px] w-14 h-14 bg-[#2E4F4F]">
                 <i className="fa-solid fa-location-dot text-inherit"></i>
@@ -30,22 +30,22 @@ const Contact = () => {
                 <h3 className="text-white">My socials:</h3>
                 <ul className="flex items-center gap-x-2">
                   <li>
-                    <a href="#" className="text-[22px] transition-colors hover:text-yellow-500">
+                    <a href="https://github.com/developerabrorbek" rel="noreferrer" target="_blank" className="text-[22px] transition-colors hover:text-yellow-500">
                       <i className="fa-brands fa-github text-inherit"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-[22px] transition-colors hover:text-yellow-500">
+                    <a href="https://www.linkedin.com/in/abdulkhamidovabrorbek" rel="noreferrer" target="_blank" className="text-[22px] transition-colors hover:text-yellow-500">
                       <i className="fa-brands fa-linkedin text-inherit"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-[22px] transition-colors hover:text-yellow-500">
+                    <a href="https://instagram.com/abdulxamidov.abrorbek?igshid=OGQ5ZDc2ODk2ZA==" rel="noreferrer" target="_blank" className="text-[22px] transition-colors hover:text-yellow-500">
                     <i className="fa-brands fa-instagram text-inherit"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-[22px] transition-colors hover:text-yellow-500">
+                    <a href="https://t.me/FarTM2020" rel="noreferrer" target="_blank" className="text-[22px] transition-colors hover:text-yellow-500">
                     <i className="fa-brands fa-telegram text-inherit"></i>
                     </a>
                   </li>
