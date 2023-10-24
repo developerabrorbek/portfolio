@@ -5,7 +5,7 @@ const Services = () => {
         My <span>services <i className="fa-solid fa-right-long text-[24px]"></i></span>
       </h1>
 
-      <ul className="cards grid grid-cols-3 gap-4">
+      <ul className="cards grid md:grid-cols-2 xl:grid-cols-3  gap-4">
         <li className="service-card h-[350px] py-8 px-4 flex flex-col justify-center items-center bg-[#27374D] hover:bg-[#19376D] transition-all shadow-lg rounded-2xl">
           <div className="card-image mb-6 text-[28px] w-[60px] h-[60px] text-yellow-500 bg-[#DDE6ED] rounded-md flex items-center justify-center">
             <i className="fa-solid fa-display"></i>
