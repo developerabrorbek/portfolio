@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 const Aside = () => {
   return (
     <>
-      <aside className="site-aside fixed flex flex-col pt-28  items-center bg-[#232D3F] z-10 left-0 top-0 min-w-[300px] h-screen">
+      <aside className="site-aside hidden fixed md:flex flex-col pt-28  items-center bg-[#232D3F] z-10 left-0 top-0 min-w-[300px] h-screen">
         <div className="logo text-3xl font-semibold tracking-wider mb-28 text-white">
           AbrorDev
         </div>

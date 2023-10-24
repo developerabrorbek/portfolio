@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
-  color: #DC6B24;
+.active {
+  color: #dc6b24;
+}
+
+span {
+  color: #dc6b24;
+}
+
+li{
+  color: white;
 }
