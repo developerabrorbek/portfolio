@@ -2,8 +2,8 @@ import DownloadButton from "../components/Buttons";
 
 const Contact = () => {
   return (
-    <div className="contact-page min-h-screen bg-[#0F0F0F] p-12">
-      <h1 className="text-white text-[38px] border-b font-semibold inline-block border-[#dc6b24] mb-20 ml-16">
+    <div className="contact-page min-h-screen bg-[#0F0F0F] p-8 lg:p-12">
+      <h1 className="text-white text-[38px] border-b font-semibold inline-block border-[#dc6b24] mb-20 ml-4 lg:ml-[70px]">
         Contact{" "}
         <span>
           me <i className="fa-solid fa-right-long text-[24px]"></i>
@@ -12,7 +12,7 @@ const Contact = () => {
 
       <div className="contact-body">
         <div className="socials flex justify-center mb-12">
-          <ul className="grid grid-cols-2 w-full gap-8 px-16">
+          <ul className="grid xl:grid-cols-2 w-full gap-8 px-4 lg:px-16">
             <li className="flex gap-5 items-center bg-[#2C3333] py-2 px-4 rounded-md">
               <div className="location flex items-center justify-center rounded-full text-[24px] w-14 h-14 bg-[#2E4F4F]">
                 <i className="fa-solid fa-location-dot text-inherit"></i>
@@ -73,8 +73,8 @@ const Contact = () => {
           </ul>
         </div>
 
-        <form className="grid gap-4 w-full px-16">
-          <div className="grid grid-cols-2 gap-8 w-full">
+        <form className="flex flex-col gap-4 w-full px-4 lg:px-16">
+          <div className="grid lg:grid-cols-2 gap-8 w-full">
             <label htmlFor="name" className="block w-full">
               <p className="text-slate-300 text-[18px] mb-1">Name</p>
               <input
@@ -100,7 +100,7 @@ const Contact = () => {
               rows={8}
             />
           </label>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col self-center md:flex-row justify-center gap-4">
             <button
               type="submit"
               className="hover:bg-[#3a9648] border  hover:border-[#3a9648] bg-transparent border-[#47ca5a] text-white font-semibold text-[18px] rounded-xl p-3  w-[200px]"
