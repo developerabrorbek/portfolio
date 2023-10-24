@@ -11,7 +11,7 @@ function App() {
     <>
       <main className="">
         <Aside />
-        <div className="main-body min-h-screen md:ml-[300px]">
+        <div className="main-body min-h-screen lg:ml-[300px]">
           <Routes>
             <Route element={<Home />} path="/" />
             <Route element={<About />} path="/about" />
