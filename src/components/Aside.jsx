@@ -3,7 +3,7 @@ const Aside = () => {
   return (
     <>
       <div className="navbar-overlay hidden fixed  w-screen h-screen z-20"></div>
-      <div className="burger lg:hidden bg-[#0F0F0F] pt-2 text-white text-[26px]">
+      <div className="burger lg:hidden bg-[#0F0F0F] pt-2 pl-4 text-white text-[26px]">
         <i className="fa-solid fa-bars text-inherit"></i>
       </div>
       <aside className="site-aside fixed  z-10 left-0 top-0 ">

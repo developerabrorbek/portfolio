@@ -25,14 +25,14 @@ const About = () => {
         autem consequuntur illo corporis similique aliquid?
       </p>
 
-      <ul className="about-me list-none max-w-[700px] grid grid-cols-2  gap-3 mb-8">
-        <li>Birthday: 5 July 2005</li>
-        <li>City: Tashkent, Uzbekistan</li>
-        <li>Phone: +998 93 938 64 62</li>
-        <li>Age: {myAge}</li>
-        <li>Degree: Bachelor(currently)</li>
-        <li>Email: abdulkhamidovabrorbek@gamil.com</li>
-        <li>Freelance: Available</li>
+      <ul className="about-me list-none max-w-[700px] grid md:grid-cols-2  gap-3 mb-8">
+        <li><i className="fa-solid fa-angle-right text-[#dc6b24] mr-1"></i>Birthday: 5 July 2005</li>
+        <li><i className="fa-solid fa-angle-right text-[#dc6b24] mr-1"></i>City: Tashkent, Uzbekistan</li>
+        <li><i className="fa-solid fa-angle-right text-[#dc6b24] mr-1"></i>Phone: +998 93 938 64 62</li>
+        <li><i className="fa-solid fa-angle-right text-[#dc6b24] mr-1"></i>Age: {myAge}</li>
+        <li><i className="fa-solid fa-angle-right text-[#dc6b24] mr-1"></i>Degree: Bachelor(currently)</li>
+        <li><i className="fa-solid fa-angle-right text-[#dc6b24] mr-1"></i>Email: abdulkhamidovabrorbek@gamil.com</li>
+        <li><i className="fa-solid fa-angle-right text-[#dc6b24] mr-1"></i>Freelance: Available</li>
         <li></li>
       </ul>
       <DownloadButton />
@@ -46,7 +46,7 @@ const About = () => {
           <h4 className="text-white text-[22px] mb-4 font-semibold">
             FrontEnd:
           </h4>
-          <ul className="grid grid-cols-2 gap-2">
+          <ul className="grid md:grid-cols-2 gap-2">
             <li className="flex flex-col gap-2">
               <div className="skill-body flex justify-between pe-2 items-center">
                 <p className="text-white">HTML</p>
@@ -89,7 +89,7 @@ const About = () => {
           <h4 className="text-white text-[22px] mb-4 font-semibold">
             BackEnd:
           </h4>
-          <ul className="grid grid-cols-2 gap-2">
+          <ul className="grid md:grid-cols-2 gap-2">
             <li className="flex flex-col gap-2">
               <div className="skill-body flex justify-between pe-2 items-center">
                 <p className="text-white">HTML</p>
