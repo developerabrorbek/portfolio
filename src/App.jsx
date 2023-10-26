@@ -4,12 +4,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/contact";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <>
-      <main className="">
+      <main>
         <Aside />
         <div className="main-body min-h-screen lg:ml-[300px]">
           <Routes>
