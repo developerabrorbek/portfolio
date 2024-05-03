@@ -4,6 +4,7 @@ import Logo from "../../public/logo.svg";
 const Aside = () => {
   const asideEl = useRef(null);
   const overlayEl = useRef(null);
+
   const handleBurger = () => {
     asideEl.current.classList.remove("slide-left");
     asideEl.current.classList.add("slide-right");
@@ -22,11 +23,11 @@ const Aside = () => {
         <div
           onClick={handleOverlay}
           ref={overlayEl}
-          className="navbar-overlay hidden fixed top-0 left-0 w-screen bg-[#ccc7] min-h-screen z-20"
+          className="navbar-overlay cursor-pointer hidden fixed top-0 left-0 w-screen bg-[#ccc7] min-h-screen z-20"
         ></div>
         <div
           onClick={handleBurger}
-          className="burger lg:hidden bg-[#0F0F0F] px-8 pt-4 text-white text-[26px]"
+          className="burger lg:hidden cursor-pointer bg-[#0F0F0F] px-8 pt-4 text-white text-[26px]"
         >
           <i className="fa-solid fa-bars text-inherit"></i>
         </div>
@@ -50,6 +51,7 @@ const Aside = () => {
                 <li className="border-b px-8 py-3">
                   <NavLink
                     to="/"
+                    onClick={handleOverlay}
                     className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
                   >
                     <i className="fa-solid fa-house text-inherit"></i>Home
@@ -58,6 +60,7 @@ const Aside = () => {
                 <li className="border-b px-8 py-3">
                   <NavLink
                     to="/about"
+                    onClick={handleOverlay}
                     className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
                   >
                     <i className="fa-solid fa-user text-inherit"></i>About
@@ -66,6 +69,7 @@ const Aside = () => {
                 <li className="border-b px-8 py-3">
                   <NavLink
                     to="/services"
+                    onClick={handleOverlay}
                     className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
                   >
                     <i className="fa-solid fa-list text-inherit"></i>Services
@@ -74,6 +78,7 @@ const Aside = () => {
                 <li className="border-b px-8 py-3">
                   <NavLink
                     to="/portfolio"
+                    onClick={handleOverlay}
                     className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
                   >
                     <i className="fa-solid fa-briefcase text-inherit"></i>
@@ -83,6 +88,7 @@ const Aside = () => {
                 <li className="border-b px-8 py-3 transition-all">
                   <NavLink
                     to="/contact"
+                    onClick={handleOverlay}
                     className="flex gap-x-4 items-center font-medium text-[20px] text-white transition-colors hover:text-[#dc6b24]"
                   >
                     <i className="fa-solid fa-message text-inherit"></i>Contact

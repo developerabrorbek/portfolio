@@ -2,6 +2,7 @@ import DownloadButton from "../components/Buttons";
 
 const About = () => {
   const myAge = new Date().getFullYear() - 2005;
+
   return (
     <div className="home-page min-h-screen bg-[#0F0F0F] p-12">
       <h1 className="text-white text-[38px] border-b font-semibold inline-block border-[#dc6b24] mb-20">
@@ -17,20 +18,20 @@ const About = () => {
       <p className="text-white font-mono text-[16px] mb-16">
         I am a FullStack developer with a strong educational background in
         Software Engineering. I have completed the FullStack developer course at
-        Najot Ta&apos;lim and obtained a certification. <br/> Additionally, I hold a
-        Bachelor&apos;s degree in Software Engineering from TUIT, where I achieved an
-        impressive GPA of 4.12 out of 5. I have also acquired valuable skills
-        through various certifications, including Coding Interview Preparations
-        and Version Control from META. <br/>Furthermore, I have completed courses
-        such as Learning Javascript, Advanced React, FrontEnd Developer
-        Capstone, HTML CSS in Depth, and Principles of UI/UX. With expertise in
-        C++, JavaScript, Node.js, Express.js, MongoDB, PostgreSQL and more; I am
-        well-equipped to handle complex projects. <br/> My proficiency extends to
-        technologies like GraphQL and Apollo Server for efficient data
-        management. My language proficiency includes English (B2 level), Russian
-        (B1 level), German (A1 level), and Uzbek (Native). <br/> I am eager to apply
-        my knowledge and skills as a FullStack developer to contribute
-        effectively to your team.
+        Najot Ta&apos;lim and obtained a certification. <br /> Additionally, I
+        hold a Bachelor&apos;s degree in Software Engineering from TUIT, where I
+        achieved an impressive GPA of 4.12 out of 5. I have also acquired
+        valuable skills through various certifications, including Coding
+        Interview Preparations and Version Control from META. <br />
+        Furthermore, I have completed courses such as Learning Javascript,
+        Advanced React, FrontEnd Developer Capstone, HTML CSS in Depth, and
+        Principles of UI/UX. With expertise in C++, JavaScript, Node.js,
+        Express.js, MongoDB, PostgreSQL and more; I am well-equipped to handle
+        complex projects. <br /> My proficiency extends to technologies like
+        GraphQL and Apollo Server for efficient data management. My language
+        proficiency includes English (B2 level), Russian (B1 level), German (A1
+        level), and Uzbek (Native). <br /> I am eager to apply my knowledge and
+        skills as a FullStack developer to contribute effectively to your team.
       </p>
 
       <ul className="about-me list-none max-w-[700px] grid md:grid-cols-2  gap-3 mb-8">
@@ -101,7 +102,14 @@ const About = () => {
             </li>
             <li className="flex flex-col gap-2">
               <div className="skill-body flex justify-between pe-2 items-center">
-                <p className="text-white">React</p>
+                <p className="text-white">React JS</p>
+                <i className="fa-regular fa-circle-check"></i>
+              </div>
+              <span className="block h-1 rounded-sm bg-[#dc6b24]"></span>
+            </li>
+            <li className="flex flex-col gap-2">
+              <div className="skill-body flex justify-between pe-2 items-center">
+                <p className="text-white">Next JS</p>
                 <i className="fa-regular fa-circle-check"></i>
               </div>
               <span className="block h-1 rounded-sm bg-[#dc6b24]"></span>
@@ -165,7 +173,21 @@ const About = () => {
             </li>
             <li className="flex flex-col gap-2">
               <div className="skill-body flex justify-between pe-2 items-center">
-                <p className="text-white">PostgreSQL/MongoDB</p>
+                <p className="text-white">Minio</p>
+                <i className="fa-regular fa-circle-check"></i>
+              </div>
+              <span className="block h-1 rounded-sm bg-[#dc6b24]"></span>
+            </li>
+            <li className="flex flex-col gap-2">
+              <div className="skill-body flex justify-between pe-2 items-center">
+                <p className="text-white">Docker</p>
+                <i className="fa-regular fa-circle-check"></i>
+              </div>
+              <span className="block h-1 rounded-sm bg-[#dc6b24]"></span>
+            </li>
+            <li className="flex flex-col gap-2">
+              <div className="skill-body flex justify-between pe-2 items-center">
+                <p className="text-white">PostgreSQL/MySQL/MongoDB</p>
                 <i className="fa-regular fa-circle-check"></i>
               </div>
               <span className="block h-1 rounded-sm bg-[#dc6b24]"></span>

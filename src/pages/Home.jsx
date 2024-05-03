@@ -14,9 +14,8 @@ const Home = () => {
           <span className="font-mono text-[38px] ">FullStack developer</span>
         </h1>
         <p className="text-white mb-8 text-lg font-middle text-center lg:text-left">
-          I am a professional web developer.
-          I can create both FrontEnd and BackEnd parts of a website.
-          If you interested click the button.
+          I am a professional web developer. I can create both FrontEnd and
+          BackEnd parts of a website. If you interested click the button.
         </p>
         <Link
           to="/about"

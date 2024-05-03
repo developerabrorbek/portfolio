@@ -166,7 +166,13 @@ const Portfolio = () => {
         </li>
       </ul>
 
-      <a href="https://github.com/developerabrorbek" className="inline-block hover:text-[#dc6b24] transition-colors text-white mt-8 text-xl">Show others on my Github <i className="fa-brands fa-github text-2xl"></i></a>
+      <a
+        href="https://github.com/developerabrorbek"
+        className="inline-block hover:text-[#dc6b24] transition-colors text-white mt-8 text-xl"
+      >
+        Show others on my Github{" "}
+        <i className="fa-brands fa-github text-2xl"></i>
+      </a>
     </div>
   );
 };

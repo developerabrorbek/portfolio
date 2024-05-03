@@ -16,18 +16,20 @@ const Services = () => {
           <div className="card-body flex flex-col items-center">
             <h3 className=" font-bold text-[22px] mb-3">FrontEnd</h3>
             <p className=" text-center px-2">
-              I can create beautiful and fully interactive websites for your company 
+              I can create beautiful and fully interactive websites for your
+              company
             </p>
           </div>
         </li>
         <li className="service-card h-[350px] py-8 px-4 flex flex-col justify-center items-center bg-[#27374D] hover:bg-[#19376D] transition-all shadow-lg rounded-2xl">
           <div className="card-image mb-6 text-[28px] w-[60px] h-[60px] text-yellow-500 bg-[#DDE6ED] rounded-md flex items-center justify-center">
-          <i className="fa-solid fa-server"></i>
+            <i className="fa-solid fa-server"></i>
           </div>
           <div className="card-body flex flex-col items-center">
             <h3 className=" font-bold text-[22px] mb-3">BackEnd</h3>
             <p className=" text-center px-2">
-              Let&apos;s build real time application services with multilanguage and microservices.
+              Let&apos;s build real time application services with multilanguage
+              and microservices.
             </p>
           </div>
         </li>
