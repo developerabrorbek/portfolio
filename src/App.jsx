@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route element={<Portfolio />} path="/portfolio" />
             <Route element={<Contact />} path="/contact" />
           </Routes>
+          <Toaster position="top-right" />
         </div>
       </main>
     </>
